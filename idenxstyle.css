@@ -1,0 +1,70 @@
+header{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 100px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 9999;
+}
+header ul{
+    display: flex;
+    list-style-type: none;
+    margin-right: 150px;
+}
+header ul li{
+    margin: 0 15px;
+}
+header ul li a{
+   text-decoration: none;
+   color: #cd0042;
+   font-weight: bold;
+   padding: 6px 15px;
+   position: relative;
+}
+header ul li:nth-child(2) a{
+    color: #fff;
+}
+header ul li:nth-child(2) a::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-color: #ea004b;
+    vertical-align: baseline;
+    border-radius: 8px;
+    transition: inset .3s cubic-bezier(.39,2.04,1,.49), background .3s ease-out;
+}
+header ul li:nth-child(2) a:hover::before{
+    inset: -3px -5px;
+    background: #cd0042;
+}
+header ul li:nth-child(1) a::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    border: 1.25px solid #ea004b;
+    border-radius: 8px;
+    transition: .3s cubic-bezier(.39,2.04,1,.49);
+}
+header ul li:nth-child(1) a:hover::before{
+    inset: -3px -5px;
+    vertical-align: baseline;
+}
+
+header i{
+    color: #ea004b;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform .3s cubic-bezier(.39,2.04,1,.49);
+}
+header i:hover{
+    transform: scale(1.12);
+}
+
