@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+
+    .header{
+        background-color: #9933cc;
+        color: #fff;
+        padding: 15px;
+    }
+    .menu ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .menu li{
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: #9933cc;
+        color: #fff;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+        position: relative;
+        transition: transform 0.3s ease;
+    }
+    .menu li::after{
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #0099cc;
+        transition: backgrand-color 0.3s ease;
+    }
+
+    .menu li:hover::after{
+        background-color: #000;
+       
+    }
+    .menu li:hover{
+        background-color: #0099cc;
+        transform:translateY(-3px)
+    }
+    .aside{
+        background-color: #33b5e5;
+        padding: 15px;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+    }
+    .footer{
+        background-color: #9933cc;
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        padding: 15px;
+    }
+    
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    @media only screen and (min-width:600px){
+        .col-s-1{width: 8.33%;}
+        .col-s-2{width: 16.66%;}
+        .col-s-3{width: 25%;}
+        .col-s-4{width: 33.33%;}
+        .col-s-5{width: 41.66%;}
+        .col-s-6{width: 50%;}
+        .col-s-7{width: 58.33%;}
+        .col-s-8{width: 66.66%;}
+        .col-s-9{width: 75%;}
+        .col-s-10{width: 83.33%;}
+        .col-s-11{width: 91.66%;}
+        .col-s-12{width: 100%;}
+
+    }
+    
+    @media only screen and (min-width:768px){
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}
+    }
+
+</style>
+
+<body>
+    <div class="header">
+        <h1>Techcareer.net</h1>
+    </div>
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <li>Bootcamp</li>
+                <li>Hecatlon</li>
+                <li>Yarışma</li>
+                <li>Kodlama</li>
+            </ul>
+        </div>
+        <div class="col-6 col-s-9">
+            <h1>Css WorkShop</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minima excepturi, sequi quidem tenetur
+                inventore, architecto cumque libero reiciendis natus, dolorem eveniet adipisci? Commodi doloremque
+                dolore consectetur natus tenetur omnis.</p>
+        </div>
+        <div class="col-3 col-s-12">
+            <div class="aside">
+                <h2>Ne öğrenmek istersin?</h2>
+                <p>Kodlama</p>
+                <h2>Ne öğrenmek istersin?</h2>
+                <p>Kodlama</p>
+                <h2>Ne öğrenmek istersin?</h2>
+                <p>Kodlama</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum voluptatem eaque nihil tempora, veniam
+            laborum, laboriosam iusto reiciendis sint officiis libero ex esse nulla fugiat repudiandae blanditiis
+            numquam aliquid? Quae.</p>
+    </div>
+</body>
+
+</html>

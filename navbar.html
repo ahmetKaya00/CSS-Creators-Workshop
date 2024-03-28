@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            background-color: #333;
+            padding: 15px 0;
+        }
+
+        .nav-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .nav-list li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .nav-list li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s ease;
+        }
+
+        .nav-list li a:hover {
+            background-color: #555;
+            transform: scale(1.1);
+        }
+
+        .nav-list li a::before {
+            content: "\2022";
+            margin-right: 5px;
+        }
+
+        .nav-list li a::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            transition: width 0.3s ease;
+        }
+
+        .nav-list li a:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="">Ana Sayfa</a></li>
+            <li><a href="">Hakkımızda</a></li>
+            <li><a href="">Hizmetler</a></li>
+            <li><a href="">İletişim</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

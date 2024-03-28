@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .relative-contaner{
+            position: relative;
+        }
+        .relative-box{
+            background-color: red;
+            position: relative;
+        }
+        .absolute-box{
+            background-color: blue;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+        }
+        .fixed-box{
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="relative-container">
+        <div class="relative-box">Relative Pozisyon</div>
+        <div class="absolute-box">Absolute Pozisyon</div>
+    </div>
+
+    <div class="fixed-box">Sabit Pozisyon</div>
+</body>
+</html>
